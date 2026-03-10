@@ -88,4 +88,5 @@ ENV OPENROAD_EXE=/usr/bin/openroad
 USER user
 WORKDIR /home/user
 
-ENTRYPOINT ["openroad"]
+ENTRYPOINT ["docker-entrypoint.sh"]
+CMD ["openroad"]
